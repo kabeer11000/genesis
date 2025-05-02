@@ -1,1 +1,2 @@
-we are gonna be predicitng atom positions 
+Use Evolutionary Algorithims to approximate / predict 3D positioning of Atoms.
+![PDA Format per-atom](https://lammpstube.com/wp-content/uploads/2020/04/Pdb-file-format.png)
