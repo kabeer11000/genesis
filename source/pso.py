@@ -53,4 +53,5 @@ class ParticleSwarmOptimizer:
             self.global_best = self.personal_best[np.argmin(self.personal_best_scores)]
             best_score = min(self.personal_best_scores)
             print(f"Generation {gen}, Best RMSD: {best_score:.3f}")
+            print("Best Prediction: ", self.global_best, ", Sequence: ", self.proteins[np.argmin(self.personal_best_scores)])
 
