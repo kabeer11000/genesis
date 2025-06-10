@@ -152,6 +152,9 @@ void demonstrateGraphRepresentation() {
     std::cout << "Node 3: CombinationFunction(0,1) (inputs: Node0, Node1) -> combined angle/hydro" << std::endl;
     std::cout << "Node 4: CombinationFunction(1,2) (inputs: Node1, Node2) -> combined hydro/distance" << std::endl;
     std::cout << "Node 5: CombinationFunction(0,2,3) (inputs: Node0, Node2, Node3) -> final combination" << std::endl;
+    for (int i = 6; i < N; i++) {
+        executor.
+    }
     
     std::cout << "\nData flow: Input -> [0,1,2] -> [3,4] -> [5] -> Output" << std::endl;
     std::cout << "Total weights needed: " << executor.getTotalWeightCount() << std::endl;
