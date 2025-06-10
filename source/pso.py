@@ -4,7 +4,7 @@ from utils import rmsd
 from tqdm import tqdm
 
 class ParticleSwarmOptimizer:
-    def _init_(self, proteins, population_size=30, generations=50, inertia=0.7, cognitive=1.5, social=1.5):
+    def __init__(self, proteins, population_size=30, generations=50, inertia=0.7, cognitive=1.5, social=1.5):
         self.proteins = proteins
         self.population_size = population_size
         self.generations = generations
@@ -53,4 +53,4 @@ class ParticleSwarmOptimizer:
             self.global_best = self.personal_best[np.argmin(self.personal_best_scores)]
             best_score = min(self.personal_best_scores)
             print(f"Generation {gen}, Best RMSD: {best_score:.3f}")
-            
+
